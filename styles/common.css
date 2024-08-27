@@ -1,0 +1,128 @@
+body {
+  font-family: futura-pt;
+}
+.icon-link {
+  color: #333;
+  font-size: 1.5rem;
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  color: #007bff;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+.navbar-brand {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #020595, #0687b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.header {
+  height: 130px;
+  padding: 10px 0;
+  margin: 0 10px;
+}
+.nav-link {
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.header .badge {
+  position: absolute;
+  font-size: 1rem;
+  top: -10px;
+  right: -10px;
+  background-color: #dc3545;
+  color: #fff;
+}
+.small-badge {
+  font-size: 0.75rem;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2rem;
+}
+.icon-list {
+  width: 32px;
+  height: 32px;
+  color: #333;
+  font-size: 1.5rem;
+}
+.icon-list:hover {
+  color: #007bff;
+}
+.carousel-caption {
+  width: 253px;
+  height: 143px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.join-now {
+  width: 122px;
+  height: 26px;
+}
+.carousel-item img {
+  width: 100%;
+  height: 305px !important;
+  object-fit: cover;
+  object-position: center;
+}
+.carousel {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .carousel-item img {
+    width: 100%;
+    height: 734px !important;
+  }
+  .carousel-caption {
+    width: 470px;
+    height: 154px;
+    top: 40px;
+    left: 40px;
+  }
+  .poster-name {
+    width: 700px;
+    font-size: 60px;
+  }
+  .poster-title p {
+    font-size: 24px;
+  }
+  .join-now {
+    font-size: 20px;
+  }
+  .join-now {
+    width: 210px;
+    height: 36px;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-item img {
+    width: 100%;
+    height: 534px !important;
+  }
+}
