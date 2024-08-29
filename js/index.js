@@ -46,3 +46,13 @@
 //   setupCategoryCarousel(categories);
 //   loadProductsByCateogy(categories[0]);
 // });
+$(document).ready(function () {
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 1) {
+      // Thay đổi 50 theo nhu cầu của bạn
+      $(".header").addClass("scrolled");
+    } else {
+      $(".header").removeClass("scrolled");
+    }
+  });
+});

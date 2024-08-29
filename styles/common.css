@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: futura-pt;
+}
+.container {
+  max-width: 100%;
 }
 .icon-link {
   color: #333;
@@ -32,7 +38,6 @@ body {
   color: #007bff;
 }
 .navbar-brand {
-  font-size: 2rem;
   background: linear-gradient(90deg, #020595, #0687b6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -41,16 +46,29 @@ body {
 }
 
 .header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   height: 130px;
   padding: 10px 0;
-  margin: 0 10px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.header:hover {
+  background-color: rgba(255, 255, 255, 1); /* Đảm bảo màu nền có độ phủ 100% */
+}
+.header.scrolled {
+  background-color: rgba(255, 255, 255, 1);
 }
 .nav-link {
   font-size: 1rem;
   padding: 5px;
 }
 
-.header .badge {
+.badge {
   position: absolute;
   font-size: 1rem;
   top: -10px;
@@ -72,12 +90,14 @@ body {
 .icon-list:hover {
   color: #007bff;
 }
+.carousel-item {
+}
 .carousel-caption {
+  position: absolute;
   width: 253px;
   height: 143px;
-  position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 70px;
+  left: 30px;
 }
 .join-now {
   width: 122px;
@@ -85,28 +105,255 @@ body {
 }
 .carousel-item img {
   width: 100%;
-  height: 305px !important;
-  object-fit: cover;
+  height: 350px !important;
+  object-fit: fill;
+  overflow: hidden;
   object-position: center;
+  background-position: right;
 }
 .carousel {
   width: 100%;
 }
+.product-title p {
+  font-size: 20px;
+  font-weight: 600;
+}
 
-@media (min-width: 992px) {
+.new {
+  font-size: 10px;
+  background: black;
+  color: #fff;
+  width: 50px;
+  height: 20px;
+  padding-top: 4px;
+  font-weight: 600;
+}
+
+.new {
+  position: absolute;
+  bottom: -8px;
+  left: 47px;
+}
+.card-thumbnail img {
+  width: 143px;
+  height: 179px;
+}
+.p-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+.name-price {
+  margin-top: 10px;
+}
+.name-price a {
+  text-decoration: none;
+}
+.description {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 300;
+}
+.price {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+}
+.description-quickshop {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.curate-shop {
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
+  color: rgb(237, 10, 196);
+  border: 1px solid rgb(237, 10, 196);
+  margin: 20px auto;
+}
+.join-soko {
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
+  color: rgb(237, 10, 196);
+  border: 1px solid rgb(237, 10, 196);
+  margin: 20px auto;
+}
+.soko-thumbnail {
+  max-width: 100%;
+  height: 407px;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.soko-title {
+  font-size: 28px;
+}
+.soko-description {
+  font-size: 16px;
+}
+.join-soko {
+  color: #d51280;
+  background-color: transparent;
+  border: 1px solid #d51280;
+  font-size: 11px;
+  padding: 8px 15px;
+  cursor: pointer;
+  pointer-events: all;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.47px;
+}
+.soko-description {
+}
+.skincare-card img {
+  max-width: 100%;
+  height: 328px;
+}
+.shop-now {
+  color: #d51280;
+  border: 1px solid #d51280;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+.bi-chevron-right {
+  color: #fff;
+}
+.email-sign button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 0; /* Rounded corners for the right side */
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.email-sign input {
+  padding: 10px 60px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px; /* Rounded corners for the left side */
+  outline: none;
+  flex: 1; /* Make input take up available space */
+}
+@media (min-width: 768px) {
   .carousel-item img {
     width: 100%;
+    height: 534px !important;
+  }
+  .product-title p {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .navbar-brand {
+    font-size: 40px;
+  }
+  .best-seller {
+    font-size: 12px;
+    background: black;
+    color: #fff;
+    width: 100px;
+    height: 25px;
+    padding-top: 6px;
+    font-weight: 600;
+  }
+  .exclusive {
+    font-size: 12px;
+    background: rgb(4, 111, 198);
+    color: #fff;
+    width: 100px;
+    height: 25px;
+    padding-top: 6px;
+    font-weight: 600;
+  }
+  .sticky-note {
+    position: absolute;
+    bottom: -14px;
+    left: 15px;
+  }
+  .card-thumbnail img {
+    width: 143px;
+    height: 179px;
+  }
+  .p-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+  }
+  .name-price a {
+    text-decoration: none;
+  }
+  .description {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .price {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .description-quickshop {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .card-thumbnail:hover .description-quickshop {
+    opacity: 1;
+  }
+  .card-thumbnail:hover img {
+    opacity: 40%;
+  }
+  .curate-shop {
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    color: rgb(237, 10, 196);
+    border: 1px solid rgb(237, 10, 196);
+    margin: 20px auto;
+  }
+  .join-soko {
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    color: rgb(237, 10, 196);
+    border: 1px solid rgb(237, 10, 196);
+    margin: 20px auto;
+  }
+  .soko-thumbnail {
+    max-width: 100%;
+    height: 507px;
+    object-fit: fill;
+    overflow: hidden;
+  }
+  .soko-content {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    font-size: 40px;
+  }
+  .nav-link {
+    font-size: 16px !important;
+    font-weight: 500;
+    letter-spacing: 1.63px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+  .carousel-item img {
+    width: 100% !important;
     height: 734px !important;
   }
-  .carousel-caption {
+  .carousel-caption1 {
     width: 470px;
     height: 154px;
-    top: 40px;
+    top: 140px;
     left: 40px;
   }
   .poster-name {
-    width: 700px;
-    font-size: 60px;
+    width: 750px;
+    font-size: 64px;
   }
   .poster-title p {
     font-size: 24px;
@@ -119,10 +366,166 @@ body {
     height: 36px;
     margin-top: 30px;
   }
-}
-@media (min-width: 768px) {
-  .carousel-item img {
-    width: 100%;
-    height: 534px !important;
+  .product-title p {
+    font-size: 36px;
+  }
+  .sticker-name {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .active1 {
+    color: rgb(245, 9, 194);
+    text-decoration: wavy;
+  }
+  .best-seller {
+    font-size: 12px;
+    background: black;
+    color: #fff;
+    width: 100px;
+    height: 32px;
+    padding-top: 6px;
+    font-weight: 600;
+  }
+  .exclusive {
+    font-size: 12px;
+    background: rgb(4, 111, 198);
+    color: #fff;
+    width: 100px;
+    height: 32px;
+    padding-top: 6px;
+    font-weight: 600;
+  }
+  .sticky-note {
+    position: absolute;
+    bottom: -14px;
+    left: 39px;
+  }
+  .card-thumbnail img {
+    width: 310px;
+    height: 386px;
+  }
+  .p-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+  }
+  .name-price a {
+    text-decoration: none;
+  }
+  .description {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .price {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .description-quickshop {
+    width: 300px;
+    bottom: 30px;
+    left: 8px;
+  }
+  .quickshop {
+    width: 280px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #060606;
+  }
+  .quickshop:hover {
+    background-color: black;
+    color: #fff;
+  }
+  .new {
+    font-size: 12px;
+    background: black;
+    color: #fff;
+    width: 100px;
+    height: 25px;
+    padding-top: 4px;
+    font-weight: 600;
+  }
+  .new {
+    position: absolute;
+    bottom: -8px;
+    left: 108px;
+  }
+
+  .curate-shop {
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    color: rgb(237, 10, 196);
+    border: 1px solid rgb(237, 10, 196);
+  }
+  .soko-thumbnail {
+    max-width: 50%;
+    height: 825px;
+    object-fit: fill;
+    overflow: hidden;
+  }
+  .soko-content {
+    margin: auto 30px;
+    padding: 0 80px;
+    width: 650px;
+  }
+  .soko-title {
+    font-size: 64px;
+  }
+  .soko-description {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .join-soko {
+    color: #d51280;
+    background-color: transparent;
+    border: 1px solid #d51280;
+    font-size: 16px;
+    padding: 8px 15px;
+    cursor: pointer;
+    pointer-events: all;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 275px;
+    height: 45px;
+    margin-left: 0px;
+
+    /* letter-spacing: 1.47px; */
+  }
+  .skincare-card img {
+    width: 460px;
+    height: 408px;
+  }
+  .shop-now {
+    color: #d51280;
+    border: 1px solid #d51280;
+    padding: 15px 18px;
+    text-decoration: none;
+  }
+  .the-kog {
+    font-size: 32px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+  }
+  .footer-label {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+  }
+  .label {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+  }
+  .only-good {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .skin {
+    color: plum;
   }
 }
