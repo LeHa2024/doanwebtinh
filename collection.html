@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danh mục sản phẩm</title>
+    <link href="https://fonts.cdnfonts.com/css/georgia" rel="stylesheet" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,46 +20,46 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header bg-light d-flex align-content-center">
-      <div class="container-fluid pt-4">
+    <header class="header d-flex align-content-center px-lg-2">
+      <div class="container">
         <div class="d-flex flex-row align-items-center">
           <!-- Logo -->
           <div class="col-4 col-lg-3 d-none d-lg-block">
-            <a href="#" class="navbar-brand">AUPAL AURA</a>
+            <a href="product.html" class="navbar-brand">AUPAL AURA</a>
           </div>
           <!-- Menu -->
           <div class="col-4 col-lg-6 text-center d-none d-lg-block">
             <nav>
               <ul class="navbar-nav d-flex flex-row">
-                <li class="nav-item mx-lg-4">
-                  <a class="nav-link" href="#">SHOP ALL</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="collection.html">SHOP ALL</a>
                 </li>
-                <li class="nav-item mx-lg-4">
-                  <a class="nav-link" href="#">BEST SELLER</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">BEST SELLER</a>
                 </li>
-                <li class="nav-item mx-lg-4">
-                  <a class="nav-link" href="#">SALE AND OFFERS</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">SALE AND OFFERS</a>
                 </li>
-                <li class="nav-item mx-lg-4">
-                  <a class="nav-link" href="#">SKIN CONCIERGE</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">SKIN CONCIERGE</a>
                 </li>
               </ul>
             </nav>
           </div>
           <!-- Icons -->
           <div
-            class="col-4 d-lg-flex col-lg-3 justify-content-end text-right d-none d-lg-block"
+            class="col-4 col-lg-3 d-lg-flex justify-content-end text-right d-none d-lg-block"
           >
-            <a href="#" class="icon-link">
+            <a href="product.html" class="icon-link">
               <i class="bi bi-search"></i>
             </a>
-            <a href="#" class="icon-link">
+            <a href="product.html" class="icon-link">
               <i class="bi bi-person"></i>
             </a>
-            <a href="#" class="icon-link">
+            <a href="product.html" class="icon-link">
               <i class="bi bi-heart"></i>
             </a>
-            <a href="#" class="icon-link position-relative">
+            <a href="product.html" class="icon-link position-relative">
               <i class="bi bi-cart2"></i>
               <span class="badge badge-danger small-badge">0</span>
             </a>
@@ -67,20 +69,20 @@
             class="col-12 d-block d-lg-none d-flex flex-row justify-content-between text-center"
           >
             <div class="icon d-flex justify-content-start align-items-center">
-              <a href="#" class="icon-list">
+              <a href="product.html" class="icon-list">
                 <i class="bi bi-list"></i>
               </a>
-              <a href="#" class="icon-link">
+              <a href="product.html" class="icon-link">
                 <i class="bi bi-search"></i>
               </a>
             </div>
             <span class="navbar-brand">AUPAL AURA</span>
 
             <div class="icon d-flex justify-content-start align-items-center">
-              <a href="#" class="icon-link">
+              <a href="product.html" class="icon-link">
                 <i class="bi bi-person"></i>
               </a>
-              <a href="#" class="icon-link position-relative">
+              <a href="product.html" class="icon-link position-relative">
                 <i class="bi bi-cart2"></i>
                 <span class="badge badge-danger small-badge">0</span>
               </a>
@@ -89,6 +91,1237 @@
         </div>
       </div>
     </header>
+    <!-- SHOP ALL -->
+    <div class="shop-all text-center">Shop All</div>
+    <div class="filter-sort text-center d-block d-xl-none">FILTER & SORT</div>
+
+    <div class="container d-flex justify-content-center px-3">
+      <div class="filter d-none d-xl-block p-3 px-xl-5">
+        <div class="filter-sticky">Filter by</div>
+        <div class="filter-group">
+          <div class="filter-header">Skin Type</div>
+          <ul class="filter-list">
+            <li class="filter-item">Combination</li>
+            <li class="filter-item">Dry</li>
+            <li class="filter-item">Normal</li>
+            <li class="filter-item">Oily</li>
+          </ul>
+        </div>
+        <div class="filter-group">
+          <div class="filter-header">Skin Concern</div>
+          <ul class="filter-list">
+            <li class="filter-item">Acne</li>
+            <li class="filter-item">Anti-Aging/Wrinkles</li>
+            <li class="filter-item">Dryness/Hydration</li>
+            <li class="filter-item">Oil Controls/Pures</li>
+            <li class="filter-item">Pigmentation</li>
+            <li class="filter-item">Redness</li>
+            <li class="filter-item">Sensitive</li>
+          </ul>
+        </div>
+        <div class="filter-group">
+          <div class="filter-header">Product Type</div>
+          <ul class="filter-list">
+            <li class="filter-item">Oil Cleanser</li>
+            <li class="filter-item">Water Cleanser</li>
+            <li class="filter-item">Toner</li>
+            <li class="filter-item">Essence</li>
+            <li class="filter-item">Serum/Ampoule</li>
+            <li class="filter-item">Moisturizer</li>
+            <li class="filter-item">Sun Protection</li>
+            <li class="filter-item">Exfoliator</li>
+            <li class="filter-item">Body</li>
+            <li class="filter-item">Hair</li>
+            <li class="filter-item">Makeup</li>
+            <li class="filter-item">Book</li>
+            <li class="filter-item">Mists</li>
+            <li class="filter-item">Eye Creams</li>
+            <li class="filter-item">Eye Masks</li>
+            <li class="filter-item">Sets</li>
+            <li class="filter-item">Spot Treatments</li>
+            <li class="filter-item">Tool</li>
+            <li class="filter-item">Swag</li>
+            <li class="filter-item">Sheet Masks</li>
+            <li class="filter-item">Sleep Mask</li>
+            <li class="filter-item">Wash off Mask</li>
+            <li class="filter-item">Lip Treatment</li>
+          </ul>
+        </div>
+      </div>
+      <div class="all-product d-flex flex-wrap">
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/11.16-Soko-Glam-PDP-Image-Then-I-Met-You-Living-Cleansing-Balm-Korean-Skincare-Product_large.jpg?v=1668622966"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center d-none d-md-block"
+            >
+              <span
+                class="product-description description-quickshop1 d-none d-lg-block justify-content-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">SOKO GLAM</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  10-Step Korean Skincare Routine Set (Combination Skin Type)
+                </div></a
+              >
+              <div class="price py-lg-1">$199 ($254 value)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/SOKO_GLAM_PDP_Revamped_Theplantbase_Quesera_Ceramide_Ampoule-01_360x.png?v=1718073326"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">THE PLANT BASE</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  Quesera Ceramide Ampoule
+                </div></a
+              >
+              <div class="price py-lg-1">$24.90</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Shai-Shai-Shai-Caffeine-Shot-Collagen-Eye-Cream-01_1_360x.png?v=1711049158"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">SHAISHAISHAI</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  Caffeine Shot Collagen Eye Cream
+                </div></a
+              >
+              <div class="price py-lg-1">$26</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Hanyul-Age-Defying-Glass-Skin-Set-3_360x.png?v=1718128525"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(12 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">HANYUL</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  Age-Defying Glass Skin Set
+                </div></a
+              >
+              <div class="price py-lg-1">$89 ($117 value)</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Tony-Moly-Intense-Care-Snail-Hydrogel-Mask-01_360x.png?v=1699481289"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center d-none d-md-block"
+            >
+              <span
+                class="product-description description-quickshop1 d-none d-lg-block justify-content-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">TONY MOLY</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  Intense Care Snail Hydrogel Mask
+                </div></a
+              >
+              <div class="price py-lg-1">$8</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-Toner-Pad-01_360x.png?v=1723469114"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center d-none d-md-block"
+            >
+              <span class="product-description d-none d-lg-block pb-md-2">
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">ACWELL</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  Licorice pH Balancing Toner Pad
+                </div></a
+              >
+              <div class="price py-lg-1">$24</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-I_m-From-Mugwort-Serum-01_360x.png?v=1724129711"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">I'M FROM</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  I'm from Mugwort Serum
+                </div></a
+              >
+              <div class="price py-lg-1">$38</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Sun-Does-Matter-Duo_1_360x.png?v=1724693454"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">SOKO GLAM</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">Sun Does Matter Duo</div></a
+              >
+              <div class="price py-lg-1">$27</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/Soko-GlaPDP-Capsule-Collection-Good-Light-Moon-Glow-Milky-Toning-Lotion-Package_360x.jpg?v=1678733743"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center d-none d-md-block"
+            >
+              <span
+                class="product-description description-quickshop1 d-none d-lg-block justify-content-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">GOOD LIGHT</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  Moon Glow Milky Toning Lotion
+                </div></a
+              >
+              <div class="price py-lg-1">$173</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/Soko-Glam-PDP-IOPE-PDRN-CAFFEINE-SHOT-SERUM-30ml-1-06_360x.png?v=1677609655"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center d-none d-md-block"
+            >
+              <span class="product-description d-none d-lg-block pb-md-2">
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(38 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"><div class="p-name py-lg-1">IOPE</div></a>
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  PDRN Caffeine Shot Serum
+                </div></a
+              >
+              <div class="price py-lg-1">$50</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/Soko-Glam-PDP-IOPE-AIR-CUSHION-COVER-1_360x.png?v=1677609428"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"><div class="p-name py-lg-1">IOPE</div></a>
+              <a href="product.html"
+                ><div class="description py-lg-1">Air Cushion SPF 50</div></a
+              >
+              <div class="price py-lg-1">$42</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/11.30-Soko-Glam-PDP-Naturium-Vitamin-C-Complex-Serum-Skincare_360x.jpg?v=1639166670"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">NATURIUM</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  Vitamin C Complex Serum
+                </div></a
+              >
+              <div class="price py-lg-1">$21</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Soko-Glam-7-Day-Sheet-Mask-Challenge_1_360x.png?v=1723563875"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center d-none d-md-block"
+            >
+              <span
+                class="product-description description-quickshop1 d-none d-lg-block justify-content-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">SOKO GLAM</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  7-Day Sheet Mask Challenge Set
+                </div></a
+              >
+              <div class="price py-lg-1">$24 ($31 value)</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/Soko-Glam-Etude-House-SoonJung-2x-Barrier-Intensive-Cream-Skin-Care-Korean_360x.jpg?v=1629227208"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center d-none d-md-block"
+            >
+              <span class="product-description d-none d-lg-block pb-md-2">
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(472 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"><div class="p-name py-lg-1">ETUDE</div></a>
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  SoonJung 2x Barrier Intensive Cream
+                </div></a
+              >
+              <div class="price py-lg-1">$20</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Real-Barrier-Intense-Moisture-Toner-01_360x.png?v=1686933638"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(63 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">Real Barrier</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  Intense Moisture Toner
+                </div></a
+              >
+              <div class="price py-lg-1">$12</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/9.2SokoGlamPDP-TheKlogSoftShieldPimplePatch_PackagingFront_cb275173-3aca-4f0b-aec3-c27588e1d2d6_360x.jpg?v=1629224553"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">THE KLOG</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">Living Cleansing Balm</div></a
+              >
+              <div class="price py-lg-1">$38</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/COMP_D-Hero-Moisturizer_360x.jpg?v=1709659108"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center d-none d-md-block"
+            >
+              <span
+                class="product-description description-quickshop1 d-none d-lg-block justify-content-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(57 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">COMP`D</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  Super Dewy Moisturizer
+                </div></a
+              >
+              <div class="price py-lg-1">$28</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/7.29-Soko-Glam-PDP-Image-Naturium-BHA-Liquid-Exfoliant-2_-Korean-Skincare-Product_360x.jpg?v=16594611336"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center d-none d-md-block"
+            >
+              <span class="product-description d-none d-lg-block pb-md-2">
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(68 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">NATURIUM</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  BHA Liquid Exfoliant 2%
+                </div></a
+              >
+              <div class="price py-lg-1">$19</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/8.12-Soko-Glam-PDP-Image-Neogen-Real-Niacinamide-15_-Serum-Korean-Skincare-Product_360x.jpg?v=1664452639"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(27 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">NEOGEN</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  Dermalogy Real Niacinamide 15% Serum
+                </div></a
+              >
+              <div class="price py-lg-1">$38</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Vitabrid-FaceBrightening-01_360x.png?v=1709767027"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(13 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">VITABRID C12</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">Face Brightening</div></a
+              >
+              <div class="price py-lg-1">$28</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-IOPE-Revamped-Stem-III-Cream-01_1_360x.png?v=1700169167"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center d-none d-md-block"
+            >
+              <span
+                class="product-description description-quickshop1 d-none d-lg-block justify-content-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(34 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"><div class="p-name py-lg-1">IOPE</div></a>
+              <a href="product.html"
+                ><div class="description py-lg-1">Stem III Cream</div></a
+              >
+              <div class="price py-lg-1">$70</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/12.1-Soko-Glam-PDP-Naturium-Retinol-Complex-Cream-Skincare_360x.jpg?v=1677608663"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center d-none d-md-block"
+            >
+              <span class="product-description d-none d-lg-block pb-md-2">
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(352 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">NATURIUM</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">Retinol Complex Cream</div></a
+              >
+              <div class="price py-lg-1">$15</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/11.23SokoGlamPDP-I_mFromBestSellerMiniSet-Korean-Skincare_360x.jpg?v=1637703210"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(87 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">I'M FROM</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  I'm From Best Seller Mini Set
+                </div></a
+              >
+              <div class="price py-lg-1">$25</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card p-2 col-6 col-md-4 col-xl-3">
+          <div class="card-thumbnail collection-card position-relative">
+            <img
+              src="https://sokoglam.com/cdn/shop/products/Soko-Glam-PDP-Naturium-The-Multi-Vitamin-Body-Wash_5_360x.png?v=1666902195"
+              alt=""
+            />
+            <div
+              class="description-quickshop description-quickshop1 position-absolute text-center"
+            >
+              <span
+                class="product-description d-none d-lg-block text-lg-center pb-md-2"
+              >
+                With a rich, sorbet-like texture, this cleansing balm melts away
+                excess sebum, sunscreen and stubborn makeup without leaving
+                behind an oily residue, while helping soften & protect skin with
+                sea buckthorn oil.
+              </span>
+              <div class="quickshop d-none d-lg-block">QUICKSHOP</div>
+            </div>
+            <div class="sticky-note d-flex flex-column text-center flex-xl-row">
+              <div class="best-seller mx-md-2">BEST SELLER</div>
+              <div class="exclusive mx-md-2">EXCLUSIVE</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div
+              class="star-reviewer pt-md-4 pb-md-2 flex-md-column d-lg-flex flex-lg-row"
+            >
+              <div class="star-icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="reviewer">(19 Reviews)</span>
+            </div>
+            <div class="name-price d-lg-flex flex-lg-column">
+              <a href="product.html"
+                ><div class="p-name py-lg-1">NATURIUM</div></a
+              >
+              <a href="product.html"
+                ><div class="description py-lg-1">
+                  Multi Vitamin Daily Nutrient Body Wash
+                </div></a
+              >
+              <div class="price py-lg-1">$16</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

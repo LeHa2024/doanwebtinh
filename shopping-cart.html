@@ -18,94 +18,76 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid container-lg">
-          <a class="navbar-brand" href="index.html">My Shop</a>
-          <a
-            class="btn bg-secondary position-relative text-white ms-auto me-3 d-lg-none"
-            href="shopping-cart.html"
+    <header class="header d-flex align-content-center px-lg-2">
+      <div class="container">
+        <div class="d-flex flex-row align-items-center">
+          <!-- Logo -->
+          <div class="col-4 col-lg-3 d-none d-lg-block">
+            <a href="#" class="navbar-brand">AUPAL AURA</a>
+          </div>
+          <!-- Menu -->
+          <div class="col-4 col-lg-6 text-center d-none d-lg-block">
+            <nav>
+              <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item">
+                  <a class="nav-link" href="collection.html">SHOP ALL</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">BEST SELLER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SALE AND OFFERS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SKIN CONCIERGE</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Icons -->
+          <div
+            class="col-4 col-lg-3 d-lg-flex justify-content-end text-right d-none d-lg-block"
           >
-            <i class="bi bi-cart"></i>
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-            >
-              0
-              <span class="visually-hidden">items in cart</span>
-            </span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mobile-menu"
-            aria-controls="mobile-menu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mobile-menu">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Trang chủ</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Danh mục sản phẩm
-                </a>
-                <div class="dropdown-menu">
-                  <div
-                    class="categories-dropdown list-style-none row row-cols-2 gutter-x-0"
-                  >
-                    <!-- <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li> -->
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Giới thiệu</a>
-              </li>
-            </ul>
-            <form class="d-flex search-form" role="search">
-              <input
-                class="form-control me-2 search-input"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-
-            <a
-              class="btn bg-secondary position-relative text-white ms-2 d-none d-lg-block"
-              href="shopping-cart.html"
-            >
-              <i class="bi bi-cart"></i>
-              <span
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-              >
-                0
-                <span class="visually-hidden">items in cart</span>
-              </span>
+            <a href="#" class="icon-link">
+              <i class="bi bi-search"></i>
+            </a>
+            <a href="#" class="icon-link">
+              <i class="bi bi-person"></i>
+            </a>
+            <a href="#" class="icon-link">
+              <i class="bi bi-heart"></i>
+            </a>
+            <a href="#" class="icon-link position-relative">
+              <i class="bi bi-cart2"></i>
+              <span class="badge badge-danger small-badge">0</span>
             </a>
           </div>
+          <!-- Mobile Icons -->
+          <div
+            class="col-12 d-block d-lg-none d-flex flex-row justify-content-between text-center"
+          >
+            <div class="icon d-flex justify-content-start align-items-center">
+              <a href="#" class="icon-list">
+                <i class="bi bi-list"></i>
+              </a>
+              <a href="#" class="icon-link">
+                <i class="bi bi-search"></i>
+              </a>
+            </div>
+            <span class="navbar-brand">AUPAL AURA</span>
+
+            <div class="icon d-flex justify-content-start align-items-center">
+              <a href="#" class="icon-link">
+                <i class="bi bi-person"></i>
+              </a>
+              <a href="#" class="icon-link position-relative">
+                <i class="bi bi-cart2"></i>
+                <span class="badge badge-danger small-badge">0</span>
+              </a>
+            </div>
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
 
     <script
