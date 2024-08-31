@@ -311,8 +311,8 @@ body {
 }
 .shop-all {
   font-size: 35px;
-  margin: 50px auto;
-  padding-top: 100px;
+  margin: 30px auto;
+  padding-top: 60px;
 }
 .filter-sort {
   height: 48px;
@@ -325,6 +325,16 @@ body {
 .card-thumbnail img {
   width: 100%;
   height: auto;
+}
+.number {
+  text-decoration: underline;
+}
+.page {
+  font-size: 20px;
+  letter-spacing: 6px;
+}
+.arrow {
+  font-size: 32px;
 }
 @media (min-width: 768px) {
   .carousel-item img {
@@ -603,6 +613,7 @@ body {
     margin-bottom: 16px;
     margin: 130px auto;
     font-weight: 100;
+    color: #020464;
   }
 }
 @media (min-width: 1200px) {
