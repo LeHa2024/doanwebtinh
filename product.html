@@ -19,12 +19,12 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header d-flex align-content-center px-lg-2">
+    <header class="header d-flex align-content-center">
       <div class="container">
-        <div class="d-flex flex-row align-items-center">
+        <div class="d-flex flex-row align-items-center justify-content-center">
           <!-- Logo -->
           <div class="col-4 col-lg-3 d-none d-lg-block">
-            <a href="#" class="navbar-brand">AUPAL AURA</a>
+            <a href="index.html" class="navbar-brand">AUPAL AURA</a>
           </div>
           <!-- Menu -->
           <div class="col-4 col-lg-6 text-center d-none d-lg-block">
@@ -59,13 +59,13 @@
               <i class="bi bi-heart"></i>
             </a>
             <a href="#" class="icon-link position-relative">
-              <i class="bi bi-cart2"></i>
-              <span class="badge badge-danger small-badge">0</span>
+              <i class="bi bi-bag"></i>
+              <span class="badge badge-danger small-badge">2</span>
             </a>
           </div>
           <!-- Mobile Icons -->
           <div
-            class="col-12 d-block d-lg-none d-flex flex-row justify-content-between text-center"
+            class="col-12 d-block d-lg-none d-flex flex-row justify-content-between text-center p-2"
           >
             <div class="icon d-flex justify-content-start align-items-center">
               <a href="#" class="icon-list">
@@ -77,13 +77,15 @@
             </div>
             <span class="navbar-brand">AUPAL AURA</span>
 
-            <div class="icon d-flex justify-content-start align-items-center">
+            <div
+              class="icon d-flex justify-content-start align-items-center text-center"
+            >
               <a href="#" class="icon-link">
                 <i class="bi bi-person"></i>
               </a>
               <a href="#" class="icon-link position-relative">
-                <i class="bi bi-cart2"></i>
-                <span class="badge badge-danger small-badge">0</span>
+                <i class="bi bi-bag"></i>
+                <span class="badge badge-danger small-badge">2</span>
               </a>
             </div>
           </div>
@@ -91,38 +93,163 @@
       </div>
     </header>
 
-    <main class="main-product">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <div class="product-images">
-              <div class="main-carousel">
-                <div class="embla">
-                  <div class="embla__viewport">
-                    <div class="embla__container"></div>
-                  </div>
-                  <button class="embla__prev">Prev</button>
-                  <button class="embla__next">Next</button>
-                </div>
-              </div>
-              <div class="thumb-carousel">
-                <div class="embla">
-                  <div class="embla__viewport">
-                    <div class="embla__container"></div>
-                  </div>
-                  <button class="embla__prev">Prev</button>
-                  <button class="embla__next">Next</button>
-                </div>
-              </div>
+    <main class="main-product align-content-center">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-center"
+      >
+        <div
+          class="col-12 justify-content-center col-md-6 d-flex p-0 p-md-1 p-lg-3 p-xl-5"
+        >
+          <div class="col-3 d-none d-md-block d-flex flex-column">
+            <div class="product-image m-md-3">
+              <img
+                src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-pH-Balancing-Pore-Cleansing-Foam-01_860x.png?v=1717806378"
+                alt=""
+              />
+            </div>
+            <div class="product-image m-md-3">
+              <img
+                src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-pH-Balancing-Pore-Cleansing-Foam-02_860x.png?v=1717806351"
+                alt=""
+              />
+            </div>
+            <div class="product-image m-md-3">
+              <img
+                src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-pH-Balancing-Pore-Cleansing-Foam-03_860x.png?v=1717806364"
+                alt=""
+              />
+            </div>
+            <div class="product-image m-md-3">
+              <img
+                src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-pH-Balancing-Pore-Cleansing-Foam-04_860x.png?v=1717806374"
+                alt=""
+              />
             </div>
           </div>
-
-          <div class="col-12 col-lg-6">
-            <div class="product-info"></div>
+          <div class="main-img col-9">
+            <img
+              src=" https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-pH-Balancing-Pore-Cleansing-Foam-01_860x.png?v=1717806378"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="arrow d-block d-flex justify-content-between mx-5 px-4 py-4 d-md-none"
+        >
+          <i class="bi bi-arrow-left"></i>
+          <div class="dot-icon">
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+          </div>
+          <i class="bi bi-arrow-right"></i>
+        </div>
+        <div class="col-12 col-md-6 p-0 p-md-1 p-lg-3 p-xl-5 py-1">
+          <div class="product-information">
+            <div class="new-label">NEW</div>
+            <div class="product-name1 py-2 pb-md-3">ACWELL</div>
+            <div class="title-price">
+              <div class="prodescription py-md-2">
+                Licorice pH Balancing Pore Cleansing Gel Foam
+              </div>
+              <div class="pro-price py-md-2">$18.00</div>
+            </div>
+          </div>
+          <div class="addtocart d-flex py-2">
+            <div class="quantity d-flex justify-content-around">
+              <span>-</span>
+              <span>1</span>
+              <span>+</span>
+            </div>
+            <div class="addtobag text-center">ADD TO BAG</div>
+          </div>
+          <div class="main-description py-4">
+            <div class="title-description">
+              <span class="details actived m-2">Details</span>
+              <span class="details m-2">Ingredients</span>
+              <span class="details m-2">How To Use</span>
+              <span class="details m-2">Share</span>
+            </div>
+            <hr class="line-through" />
+            <div class="des-detail py-2 my-2">
+              Crafted with a delicate balance of ingredients, this refreshing
+              cleansing gel foam is enriched with the potent brightening power
+              of Licorice. Its natural properties gently brighten the skin,
+              revealing a luminous and even-toned complexion with every use. But
+              that's not all – Acwell's innovative formula also harnesses the
+              hydrating prowess of not one, but 8 types of Hyaluronic Acid. This
+              moisture-rich blend penetrates deep into the skin's layers,
+              replenishing and locking in hydration for a plump, supple finish
+              that lasts. 160 ml / 5.41 fl. oz.
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <!-- FOOTER  -->
+    <div class="footer my-5 my-lg-5 py-lg-5">
+      <div class="container">
+        <div
+          class="sign-up d-flex flex-column justify-content-center flex-lg-row text-center"
+        >
+          <div class="subcribe px-md-5">
+            Sign up for subscriber-only discounts, first look at<br />
+            newly-curated items & K-beauty skincare tips!
+          </div>
+          <div class="email-sign d-flex mt-2">
+            <input type="input" placeholder="Your email" />
+            <button type="button"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-info py-lg-2 px-lg-4">
+          <div class="row d-flex flex-column flex-md-row">
+            <div class="col-12 col-md-3 text-center text-md-start">
+              <p class="only-good">
+                ONLY GOOD<br />
+                <span class="skin">(SKIN)</span> DAYS AHEAD®
+              </p>
+            </div>
+            <div class="customer-about d-md-none py-3">
+              <div class="customer m-0 d-flex justify-content-between">
+                <div class="footer-label">Customer</div>
+                <div href="#" class="product-link me-3">
+                  <i class="bi bi-plus-lg"></i>
+                </div>
+              </div>
+              <div class="about m-0 d-flex justify-content-between">
+                <div class="footer-label">About</div>
+                <div href="#" class="product-link me-3">
+                  <i class="bi bi-plus-lg"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 d-none d-md-block">
+              <a class="footer-label" href=""><p>Customer Care</p></a>
+              <a class="label" href=""><p>FAQ</p></a>
+              <a class="label" href=""><p>Orders & Shipping</p></a>
+              <a class="label" href=""><p>Returns</p></a>
+            </div>
+            <div class="col-12 d-none col-md-3 d-md-block">
+              <a class="footer-label" href=""><p>About</p></a>
+              <a class="label" href=""><p>Terms of Service</p></a>
+              <a class="label" href=""><p>Contact Us</p></a>
+              <a class="label" href=""><p>Privacy Policy</p></a>
+            </div>
+            <div class="col-12 col-md-3 text-center text-md-start">
+              <a class="the-kog"><p>the klog</p></a>
+              <a class="label" href=""
+                ><p>
+                  Your skincare guide, inspired by Korean beauty.A Soko Glam
+                  project.
+                </p></a
+              >
+              <a class="visit-klog" href=""><p>Visit The Klog</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

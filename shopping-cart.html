@@ -15,80 +15,227 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/shopping-cart.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="header d-flex align-content-center px-lg-2">
-      <div class="container">
-        <div class="d-flex flex-row align-items-center">
-          <!-- Logo -->
-          <div class="col-4 col-lg-3 d-none d-lg-block">
-            <a href="#" class="navbar-brand">AUPAL AURA</a>
-          </div>
-          <!-- Menu -->
-          <div class="col-4 col-lg-6 text-center d-none d-lg-block">
-            <nav>
-              <ul class="navbar-nav d-flex flex-row">
-                <li class="nav-item">
-                  <a class="nav-link" href="collection.html">SHOP ALL</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">BEST SELLER</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SALE AND OFFERS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SKIN CONCIERGE</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- Icons -->
+    <div class="container">
+      <div class="aural-content d-lg-flex">
+        <div class="col-12 col-lg-6 p-3">
+          <div class="cart-title p-4">AUPAL AURA</div>
           <div
-            class="col-4 col-lg-3 d-lg-flex justify-content-end text-right d-none d-lg-block"
+            class="order-summary d-flex d-block d-lg-none justify-content-between"
           >
-            <a href="#" class="icon-link">
-              <i class="bi bi-search"></i>
-            </a>
-            <a href="#" class="icon-link">
-              <i class="bi bi-person"></i>
-            </a>
-            <a href="#" class="icon-link">
-              <i class="bi bi-heart"></i>
-            </a>
-            <a href="#" class="icon-link position-relative">
+            <div class="summary-title">
               <i class="bi bi-cart2"></i>
-              <span class="badge badge-danger small-badge">0</span>
-            </a>
+              <span>Show order summary</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+            <div class="summary-price">$52.5</div>
           </div>
-          <!-- Mobile Icons -->
+          <div class="category">
+            <span>Cart</span>
+            <i class="bi bi-chevron-right"></i>
+            <span>Information</span>
+            <i class="bi bi-chevron-right"></i>
+            <span>Shipping</span>
+            <i class="bi bi-chevron-right"></i>
+            <span>Payment</span>
+          </div>
+          <div class="express-checkout text-center">Express checkout</div>
+          <div class="payment-logo d-flex flex-column flex-lg-row">
+            <div class="payment-image shoppay col-lg-4 p">
+              <a href=""><img src="image/shoppay.png" alt="" /></a>
+            </div>
+            <div class="payment-image paypal-pay d-flex col-lg-8">
+              <a href=""
+                ><img
+                  class="paypal-logo img-fluid px-lg-2"
+                  src="image/paypal.png"
+                  alt=""
+              /></a>
+              <a href=""
+                ><img class="paypal-logo img-fluid" src="image/pay.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="line-text">
+            <span>OR</span>
+          </div>
+          <form id="checkoutForm">
+            <div class="contact-login d-flex justify-content-between">
+              <h2 class="shipping-title">CONTACT</h2>
+              <a href="">Log in</a>
+            </div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <div class="checkbox-container">
+              <input type="checkbox" id="subscribe" name="subscribe" />
+              <label for="subscribe">Email me with news and offers</label>
+            </div>
+            <h2 class="shipping-title">SHIPPING ADDRESS</h2>
+            <select id="country" name="country" required>
+              <option value="United States">United States</option>
+              <!-- Add more country options as needed -->
+            </select>
+            <div class="address-name d-flex flex-column flex-lg-row gap-1">
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Company (optional)"
+            />
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Address"
+              required
+            />
+            <input
+              type="text"
+              id="apartment"
+              name="apartment"
+              placeholder="Apartment, suite, etc. (optional)"
+            />
+            <div class="address-detail d-flex flex-column flex-lg-row gap-1">
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="City"
+                required
+              />
+              <select id="state" name="state" required>
+                <option value="Alabama">Alabama</option>
+                <!-- Add more state options as needed -->
+              </select>
+              <input
+                type="text"
+                id="zipCode"
+                name="zipCode"
+                placeholder="Zip Code"
+                required
+              />
+            </div>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+              required
+            />
+            <div class="checkbox-container">
+              <input type="checkbox" id="smsConsent" name="smsConsent" />
+              <label for="smsConsent"
+                >By signing up via text, you agree to receive recurring
+                automated marketing messages from Soko Glam at the cell number
+                provided when signing up. Consent is not a condition of any
+                purchase. Msg & data rates may apply. Text STOP at any time to
+                unsubscribe. View <span class="policy">Privacy Policy</span>.
+                (optional)</label
+              >
+            </div>
+            <div
+              class="button-container d-flex flex-column flex-md-row justify-content-md-between align-content-md-center py-md-5"
+            >
+              <div class="return-to-cart d-none d-md-block">
+                <i class="bi bi-chevron-left"></i>
+                <a href="#">Return to cart</a>
+              </div>
+              <button type="button" onclick="submitForm()">
+                CONTINUE TO SHIPPING
+              </button>
+              <div class="return-to-cart d-block d-md-none my-5">
+                <i class="bi bi-chevron-left"></i>
+                <a href="#">Return to cart</a>
+              </div>
+            </div>
+          </form>
+          <div class="footer-links">
+            <a href="#">Refund policy</a> <a href="#">Shipping policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of service</a>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block p-5 bg-light">
           <div
-            class="col-12 d-block d-lg-none d-flex flex-row justify-content-between text-center"
+            class="product-cart d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-center"
           >
-            <div class="icon d-flex justify-content-start align-items-center">
-              <a href="#" class="icon-list">
-                <i class="bi bi-list"></i>
-              </a>
-              <a href="#" class="icon-link">
-                <i class="bi bi-search"></i>
-              </a>
+            <div class="img-name position-relative">
+              <img
+                src="https://sokoglam.com/cdn/shop/products/Soko-Glam-Im-From-Rice-Toner_150x.jpg?v=1629216272"
+                alt=""
+              />
+              <span class="pro-number position-absolute">1</span>
+              <span>Rice Toner</span>
             </div>
-            <span class="navbar-brand">AUPAL AURA</span>
-
-            <div class="icon d-flex justify-content-start align-items-center">
-              <a href="#" class="icon-link">
-                <i class="bi bi-person"></i>
-              </a>
-              <a href="#" class="icon-link position-relative">
-                <i class="bi bi-cart2"></i>
-                <span class="badge badge-danger small-badge">0</span>
-              </a>
+            <div class="price-cart">$21</div>
+          </div>
+          <div
+            class="product-cart d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-center py-lg-5"
+          >
+            <div class="img-name position-relative">
+              <img
+                src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Atopalm-MLE-Cream-01_150x.png?v=1687475401"
+                alt=""
+              />
+              <span class="pro-number position-absolute">1</span>
+              <span>MLE Cream</span>
             </div>
+            <div class="price-cart">$18</div>
+          </div>
+          <div
+            class="product-cart d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-center"
+          >
+            <div class="img-name position-relative">
+              <img
+                src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-pH-Balancing-Pore-Cleansing-Foam-01_150x.png?v=1717806378"
+                alt=""
+              />
+              <span class="pro-number position-absolute">1</span>
+              <span>Licorice pH Balancing Pore</span>
+            </div>
+            <div class="price-cart">$13.5</div>
+          </div>
+          <div class="discount d-flex align-items-lg-center py-lg-5">
+            <input type="text" placeholder="Discount code or gift card" />
+            <button type="button">Apply</button>
+          </div>
+          <div class="subtotal d-flex justify-content-between py-3">
+            <span class="subtotal-name">Subtotal</span>
+            <span class="subtotal-price">$52.5</span>
+          </div>
+          <div class="subtotal d-flex justify-content-between">
+            <span class="subtotal-name">Shipping</span>
+            <span class="subtotal-price">Calculated at next step</span>
+          </div>
+          <div class="subtotal d-flex justify-content-between py-5">
+            <span class="total">Total</span>
+            <span class="total-price">USD $52.50</span>
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
