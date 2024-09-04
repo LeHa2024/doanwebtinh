@@ -97,6 +97,95 @@ body {
 .icon-list:hover {
   color: #007bff;
 }
+/*-----------BAGFORM-----------*/
+.bag-form {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+.bag-form1 {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+.bagform-card {
+  width: 408px;
+  height: auto;
+  padding-right: 20px;
+  padding-top: 50px !important;
+  border-bottom: 1px solid #a4a3a3;
+}
+.bagform-img img {
+  width: 96px;
+  height: 120px;
+}
+.bagform-title span {
+  font-size: 13px;
+}
+.bagform-quantity {
+  font-style: 14px;
+  font-weight: 700;
+  border: 1px solid #000000;
+  padding: 1px 5px;
+  background-color: #fff;
+}
+.bagform-name {
+  font-size: 13px;
+  font-weight: 700;
+}
+.bagform-des {
+  font-size: 13px;
+}
+.bagform-remove {
+  font-size: 14px;
+  margin: 10px 0 0;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.close-button {
+  width: 60px;
+  height: 60px;
+  background-color: #f1f1f1;
+  border-radius: 999px;
+  text-align: center;
+  align-content: center;
+  position: absolute;
+  font-size: 24px;
+  top: 0px;
+  right: 0px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+.bag-checkout {
+  width: 150px;
+  height: 40px;
+  color: #d51280;
+  border: 1px solid #d51280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.bag-checkout a {
+  text-decoration: none;
+  color: #d51280;
+}
+.sub-price {
+  font-size: 16px;
+  font-weight: 700;
+}
 /*-----------CAROUSEL-----------*/
 .carousel-item {
 }
