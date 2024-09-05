@@ -9,8 +9,9 @@
   justify-content: center;
   align-items: center;
   color: #000;
+  z-index: 10000;
   display: none;
 }
-.seller:hover .best-seller {
-  display: flex;
+.seller1:hover .best-seller {
+  display: block;
 }
