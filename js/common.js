@@ -87,6 +87,8 @@ const bagForm = document.querySelector(".badge");
 const closeForm = document.querySelector(".close-button");
 const closeForm1 = document.querySelector(".close-button1");
 const bagForm1 = document.querySelector(".badge1");
+const openSearch = document.querySelector(".open-search");
+const closeSearch = document.querySelector(".close-icon");
 bagForm.addEventListener("click", function () {
   document.querySelector(".bag-form").style.display = "flex";
 });
@@ -98,4 +100,10 @@ closeForm1.addEventListener("click", function () {
 });
 bagForm1.addEventListener("click", function () {
   document.querySelector(".bag-form1").style.display = "flex";
+});
+openSearch.addEventListener("click", function () {
+  document.querySelector(".search").style.display = "flex";
+});
+closeSearch.addEventListener("click", function () {
+  document.querySelector(".search").style.display = "none";
 });
