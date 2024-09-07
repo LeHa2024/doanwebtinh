@@ -15,7 +15,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles//product.css" />
+    <link rel="stylesheet" href="styles/product.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -201,7 +201,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="seller1 nav-link position-relative" href="#"
+                  <a class="seller1 nav-link position-relative" href="bestseller.html"
                     ><span>BEST SELLER</span>
                     <div class="best-sellerdropdown">
                       <div
@@ -504,31 +504,37 @@
               <img
                 src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-pH-Balancing-Pore-Cleansing-Foam-01_860x.png?v=1717806378"
                 alt=""
+                onclick="changeMainImage(this)"
               />
             </div>
             <div class="product-image m-md-3">
               <img
                 src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-pH-Balancing-Pore-Cleansing-Foam-02_860x.png?v=1717806351"
                 alt=""
+                onclick="changeMainImage(this)"
               />
             </div>
             <div class="product-image m-md-3">
               <img
                 src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-pH-Balancing-Pore-Cleansing-Foam-03_860x.png?v=1717806364"
                 alt=""
+                onclick="changeMainImage(this)"
               />
             </div>
             <div class="product-image m-md-3">
               <img
                 src="https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-pH-Balancing-Pore-Cleansing-Foam-04_860x.png?v=1717806374"
                 alt=""
+                onclick="changeMainImage(this)"
               />
             </div>
           </div>
           <div class="main-img col-9">
             <img
+              id="mainImage"
               src=" https://sokoglam.com/cdn/shop/files/Soko-Glam-PDP-Acwell-Licorice-pH-Balancing-Pore-Cleansing-Foam-01_860x.png?v=1717806378"
               alt=""
+              onclick="changeMainImage(this)"
             />
           </div>
         </div>
@@ -556,9 +562,9 @@
           </div>
           <div class="addtocart d-flex py-2">
             <div class="quantity d-flex justify-content-around">
-              <span>-</span>
-              <span>1</span>
-              <span>+</span>
+              <span id="subtraction">-</span>
+              <span id="ko">1</span>
+              <span id="addition">+</span>
             </div>
             <div class="addtobag text-center">ADD TO BAG</div>
           </div>

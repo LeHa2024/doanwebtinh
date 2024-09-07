@@ -1,91 +1,41 @@
-function renderCarousel(product) {
-  const $mainCarousel = $(".main-carousel .embla__container");
-  const $thumbCarousel = $(".thumb-carousel .embla__container");
+function changeMainImage(smallImg) {
+  // Cập nhật hình ảnh chính
+  const mainImage = document.getElementById("mainImage");
+  mainImage.src = smallImg.src;
 
-  product.images.forEach((image) =>
-    $(
-      [
-        `<div class="embla__slide">`,
-        `<div class="product-image">`,
-        `<img src="${image}" alt="${product.title}" />`,
-        `</div>`,
-        `</div>`,
-      ].join("")
-    )
-      .appendTo($mainCarousel)
-      .clone()
-      .appendTo($thumbCarousel)
-  );
-}
-
-function setupCarousel() {
-  // MAIN
-  const mainRootNode = document.querySelector(".main-carousel .embla");
-  const mainViewportNode = mainRootNode.querySelector(".embla__viewport");
-
-  // Grab button nodes
-  const mainPrevButtonNode = mainRootNode.querySelector(".embla__prev");
-  const mainNextButtonNode = mainRootNode.querySelector(".embla__next");
-
-  const mainEmbla = EmblaCarousel(mainViewportNode, {
-    dragFree: false,
-    align: "start",
+  // Xóa viền của tất cả hình ảnh nhỏ
+  const allThumbnails = document.querySelectorAll(".product-image img");
+  allThumbnails.forEach((img) => {
+    img.classList.remove("selected");
   });
 
-  // Add click listeners
-  mainPrevButtonNode.addEventListener("click", mainEmbla.scrollPrev, false);
-  mainNextButtonNode.addEventListener("click", mainEmbla.scrollNext, false);
-
-  // THUMB
-  const thumbRootNode = document.querySelector(".thumb-carousel .embla");
-  const thumbViewportNode = thumbRootNode.querySelector(".embla__viewport");
-
-  // Grab button nodes
-  const thumbPrevButtonNode = thumbRootNode.querySelector(".embla__prev");
-  const thumbNextButtonNode = thumbRootNode.querySelector(".embla__next");
-
-  const thumbEmbla = EmblaCarousel(
-    thumbViewportNode,
-    {
-      dragFree: true,
-      align: "start",
-    },
-    [EmblaCarouselClassNames()]
-  );
-
-  // Add click listeners
-  thumbPrevButtonNode.addEventListener("click", thumbEmbla.scrollPrev, false);
-  thumbNextButtonNode.addEventListener("click", thumbEmbla.scrollNext, false);
-
-  const slidesThumbs = thumbEmbla.slideNodes();
-
-  const toggleThumbBtnsState = () => {
-    thumbEmbla.scrollTo(mainEmbla.selectedScrollSnap());
-    const previous = mainEmbla.previousScrollSnap();
-    const selected = mainEmbla.selectedScrollSnap();
-    slidesThumbs[previous].classList.remove("embla-thumbs__slide--selected");
-    slidesThumbs[selected].classList.add("embla-thumbs__slide--selected");
-  };
-
-  mainEmbla.on("select", toggleThumbBtnsState);
-  thumbEmbla.on("init", toggleThumbBtnsState);
+  // Thêm viền cho hình ảnh được chọn
+  smallImg.classList.add("selected");
 }
+let productNumber = 0;
+const subtraction = document.getElementById("subtraction");
+const addition = document.getElementById("addition");
 
-function renderProductInfo(product) {}
-
-function renderProduct(product) {
-  renderCarousel(product);
-  setupCarousel();
-}
-
-$(function () {
-  const searchParams = new URLSearchParams(location.search);
-
-  const productId = searchParams.get("product-id");
-
-  if (productId) {
-    getProductById(productId).then(renderProduct);
-  } else {
-    // Hiển thị lỗi | không có sản phẩm
+subtraction.addEventListener("click", function () {
+  if (productNumber > 0) {
+    document.getElementById("ko").innerHTML = --productNumber;
   }
+});
+
+addition.addEventListener("click", function () {
+  document.getElementById("ko").innerHTML = ++productNumber;
+});
+/*-----------ingredient---- */
+document.addEventListener("DOMContentLoaded", function () {
+  const detailsElements = document.querySelectorAll(".details");
+
+  detailsElements.forEach(function (element) {
+    element.addEventListener("click", function () {
+      // Xóa lớp 'active' khỏi tất cả các phần tử
+      detailsElements.forEach((el) => el.classList.remove("actived"));
+
+      // Thêm lớp 'active' vào phần tử được nhấp
+      this.classList.add("actived");
+    });
+  });
 });
