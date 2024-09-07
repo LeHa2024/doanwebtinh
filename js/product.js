@@ -4,7 +4,7 @@ function changeMainImage(smallImg) {
   mainImage.src = smallImg.src;
 
   // Xóa viền của tất cả hình ảnh nhỏ
-  const allThumbnails = document.querySelectorAll(".product-image img");
+  const allThumbnails = document.querySelectorAll(".product-imageimg");
   allThumbnails.forEach((img) => {
     img.classList.remove("selected");
   });

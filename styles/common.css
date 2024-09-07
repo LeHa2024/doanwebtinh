@@ -432,18 +432,24 @@ body {
   font-weight: 600;
   color: #000000;
 }
+.p-name:hover {
+  text-decoration: underline;
+}
 .name-price {
   margin-top: 10px;
 }
 .name-price a {
   text-decoration: none;
-  width: 143px;
+  width: 100%;
 }
 .description {
   color: #000000;
   font-size: 12px;
   font-weight: 300;
-  width: 143px;
+  width: 100%;
+}
+.description:hover {
+  text-decoration: underline;
 }
 .price {
   color: #000000;
