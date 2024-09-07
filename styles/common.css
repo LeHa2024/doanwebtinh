@@ -148,6 +148,9 @@ body {
 .bagform-title span {
   font-size: 13px;
 }
+.hidden {
+  display: none;
+}
 .bagform-quantity {
   font-style: 14px;
   font-weight: 700;
@@ -366,6 +369,35 @@ body {
 .carousel {
   width: 100%;
 }
+.mobie-list {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #ededed;
+  z-index: 10000;
+  display: none;
+}
+.menu-list {
+  width: 330px;
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+}
+.menu-list-item i {
+  color: #000;
+  cursor: pointer;
+}
+.bestseller-logo {
+}
+
+.menu-list-logo img {
+  border-radius: 20px;
+  border: 1px solid #000;
+  margin-right: 20px;
+}
+
 /*-----------PRODUCT-----------*/
 .skincare-card img {
   width: 100%;
@@ -736,8 +768,9 @@ body {
     cursor: pointer;
   }
   .active1 {
-    color: rgb(245, 9, 194);
+    color: rgb(230, 8, 182);
     text-decoration: wavy;
+    border-bottom: 2px solid rgb(230, 8, 182);
   }
 
   .collection-card img {
@@ -867,14 +900,14 @@ body {
     color: plum;
   }
   .shop-all {
-    font-family: "Georgia", sans-serif;
+    font-family: "Playfair Display", serif;
     font-size: 59px;
     letter-spacing: 1.5px;
     line-height: 52px;
     margin-bottom: 16px;
     margin: 130px auto;
     font-weight: 100;
-    color: #020464;
+    color: #030457;
   }
 }
 @media (min-width: 1200px) {

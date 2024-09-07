@@ -89,6 +89,8 @@ const closeForm1 = document.querySelector(".close-button1");
 const bagForm1 = document.querySelector(".badge1");
 const openSearch = document.querySelector(".open-search");
 const closeSearch = document.querySelector(".close-icon");
+const openMenu = document.querySelector(".open-listmobie");
+const closeMenu = document.querySelector(".close-listmobie");
 bagForm.addEventListener("click", function () {
   document.querySelector(".bag-form").style.display = "flex";
 });
@@ -106,4 +108,24 @@ openSearch.addEventListener("click", function () {
 });
 closeSearch.addEventListener("click", function () {
   document.querySelector(".search").style.display = "none";
+});
+openMenu.addEventListener("click", function () {
+  document.querySelector(".mobie-list").style.display = "flex";
+});
+closeMenu.addEventListener("click", function () {
+  document.querySelector(".mobie-list").style.display = "none";
+});
+const toggleIcon = document.querySelector(".toggle-icon1");
+const myList = document.querySelector(".double-container1");
+
+// Thêm sự kiện click cho icon
+toggleIcon.addEventListener("click", () => {
+  myList.classList.toggle("hidden");
+
+  // Thay đổi icon khi bật/tắt
+  if (myList.classList.contains("hidden")) {
+    toggleIcon.textContent = "+"; // Icon khi danh sách bị ẩn
+  } else {
+    toggleIcon.textContent = "-"; // Icon khi danh sách hiện
+  }
 });
