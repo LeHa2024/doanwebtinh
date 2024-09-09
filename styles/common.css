@@ -633,6 +633,57 @@ body {
 .arrow {
   font-size: 32px;
 }
+.sign-in {
+  margin-top: 100px;
+}
+.sign-form {
+  width: 80%;
+  height: auto;
+
+  margin: 10px auto;
+  border: none;
+  z-index: 20;
+}
+.signin-title {
+  font-family: freight-big-pro, georgia, serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+label [for="email-address"] {
+  margin: 40px 0;
+  margin-bottom: 50px;
+}
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  height: 45px;
+  padding: 10px 10px;
+  margin: 10px 0;
+}
+button[id="login"] {
+  width: 100%;
+  height: 45px;
+  margin: 40px 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+}
+.create-account a {
+  color: #464545;
+}
+.create-account:hover a {
+  color: #f006cd;
+}
+.signin-img img {
+  width: 500px;
+  height: auto;
+}
+.signin-img {
+  right: 60px;
+  top: 340px;
+}
 @media (min-width: 768px) {
   .carousel-item img {
     width: 100%;
@@ -727,6 +778,12 @@ body {
   .soko-content {
     padding: 20px;
   }
+}
+.sign-form {
+  width: 80%;
+  border: none;
+  margin: 20px auto;
+  padding: 10px 20px 15px;
 }
 
 @media (min-width: 992px) {
@@ -914,6 +971,10 @@ body {
     margin: 130px auto;
     font-weight: 100;
     color: #030457;
+  }
+  .sign-form {
+    width: 30%;
+    border: 1px solid black;
   }
 }
 @media (min-width: 1200px) {
